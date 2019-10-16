@@ -35,6 +35,8 @@ public class Llapis implements Comparable<Llapis>{
         return Objects.hash(color);
     }
 
+
+
     @Override
     public int compareTo(Llapis llapis) {
         if(getColor() < llapis.getColor()){
