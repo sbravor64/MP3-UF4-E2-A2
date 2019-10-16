@@ -26,7 +26,8 @@ public class Llapis implements Comparable<Llapis>{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Llapis llapis = (Llapis) o;
-        return color == llapis.color;
+        return color == llapis.color &&
+                Float.compare(llapis.grosor, grosor) == 0;
     }
 
     @Override

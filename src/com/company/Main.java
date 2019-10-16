@@ -28,15 +28,11 @@ public class Main {
         llista_llapis.add(llapis9);
         llista_llapis.add(llapis10);
 
-        Set<Llapis> linkedHashSet = new LinkedHashSet<>();
-
-        linkedHashSet.addAll(llista_llapis);
-        llista_llapis.clear();
-        llista_llapis.addAll(linkedHashSet);
+        Set<Llapis> HashSet = new HashSet<>(llista_llapis);
 
         Collections.sort(llista_llapis);
 
-        for (Llapis l: llista_llapis) {
+        for (Llapis l: HashSet) {
             System.out.println("Color: " + l.getColor());
         }
 
